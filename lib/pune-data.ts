@@ -65,6 +65,7 @@ export const puneSmartCityData = {
   },
 
   energy: {
+    capacity: "2,850 MW",
     totalCapacity: "2,850 MW",
     sources: {
       grid: "65%",
@@ -73,22 +74,22 @@ export const puneSmartCityData = {
       other: "5%"
     },
     solarProjects: [
-      { name: "PMC Rooftop Solar", capacity: "25 MW", status: "Operational" },
-      { name: "Hinjewadi Solar Park", capacity: "50 MW", status: "Operational" },
-      { name: "Kothrud Solar Installation", capacity: "15 MW", status: "Under Construction" }
+      { name: "PMC Rooftop Solar", capacity: "25 MW", status: "Operational", location: "PMC Property", annualGeneration: "35 GWh" },
+      { name: "Hinjewadi Solar Park", capacity: "50 MW", status: "Operational", location: "Hinjewadi", annualGeneration: "72 GWh" },
+      { name: "Kothrud Solar Installation", capacity: "15 MW", status: "Under Construction", location: "Kothrud", annualGeneration: "21 GWh" }
     ],
     consumption: [
-      { area: "Aundh", consumed: 180, saved: 45, peak: 220 },
-      { area: "Koregaon Park", consumed: 150, saved: 38, peak: 185 },
-      { area: "Kothrud", consumed: 195, saved: 42, peak: 230 },
-      { area: "Hinjewadi", consumed: 280, saved: 65, peak: 340 },
-      { area: "Hadapsar", consumed: 245, saved: 52, peak: 290 }
+      { area: "Aundh", usage: 180, saved: 45, peakDemand: 220, efficiency: 92 },
+      { area: "Koregaon Park", usage: 150, saved: 38, peakDemand: 185, efficiency: 95 },
+      { area: "Kothrud", usage: 195, saved: 42, peakDemand: 230, efficiency: 89 },
+      { area: "Hinjewadi", usage: 280, saved: 65, peakDemand: 340, efficiency: 91 },
+      { area: "Hadapsar", usage: 245, saved: 52, peakDemand: 290, efficiency: 88 }
     ],
     smartMeters: "285,000",
     streetLights: {
-      total: 185000,
-      led: 142000,
-      smart: 95000,
+      total: "185,000",
+      led: "142,000",
+      smart: "95,000",
       energySaved: "42%"
     }
   },

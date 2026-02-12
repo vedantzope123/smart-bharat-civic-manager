@@ -180,7 +180,7 @@ export default function EnergyPage() {
             <Lightbulb className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{puneSmartCityData.energy.streetLights}</div>
+            <div className="text-2xl font-bold">{puneSmartCityData.energy.streetLights.total}</div>
             <p className="text-xs text-muted-foreground mt-1">
               LED lighting systems
             </p>
@@ -322,7 +322,7 @@ export default function EnergyPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <CardTitle>Smart Street Lighting System</CardTitle>
-                  <CardDescription>{puneSmartCityData.energy.streetLights} LED lights across the city</CardDescription>
+                  <CardDescription>{puneSmartCityData.energy.streetLights.total} LED lights across the city</CardDescription>
                 </div>
                 <Switch checked={autoMode} onCheckedChange={setAutoMode} />
               </div>
